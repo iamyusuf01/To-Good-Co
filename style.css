@@ -1,30 +1,35 @@
 @font-face {
-    font-family: Gilroy;
-    src: url(./Gilroy-medium.ttf);
+   font-family: Gilroy;
+   src: url(./Gilroy-medium.ttf);
 }
+
 @font-face {
-    font-family: Gilroy;
-    src: url(./Gilroy-Medium.ttf);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy;';
-}
-:root{
-   --a:0;
+   font-family: Gilroy;
+   src: url(./Gilroy-Medium.ttf);
 }
 
-*::selection{
-    color: #fff;
-    background-color: #000;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Gilroy;';
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+:root {
+   --a: 0;
 }
+
+*::selection {
+   color: #fff;
+   background-color: #000;
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+}
+
 body {
    background-color: #f7f7f7;
 }
@@ -39,6 +44,7 @@ body {
    align-items: flex-start;
    justify-content: space-between;
 }
+
 #nav #nav-part2 {
    display: flex;
    align-items: center;
@@ -46,17 +52,21 @@ body {
    gap: 40px;
 
 }
+
 #links {
    padding: 10px;
 }
+
 #nav-part1 {
    /* background-color: red; */
    height: 82px;
    overflow: hidden;
 }
+
 #nav-part1 svg {
    display: block;
 }
+
 #nav-part2 #links a {
    text-transform: uppercase;
    text-decoration: none;
@@ -65,124 +75,136 @@ body {
    font-size: 14px;
    margin: 0 20px;
 }
+
 #icons {
    padding: 10px;
    border-radius: 50px;
    background-color: #f7f7f7;
 }
+
 #nav-part2 #icons i {
    font-size: 18px;
    margin: 0 20px;
    font-weight: 100;
 
 }
-#cursor {   
+
+#cursor {
    height: 180px;
    width: 180px;
-   background-color:palegoldenrod;
+   background-color: palegoldenrod;
    border-radius: 50%;
    position: fixed;
-   transform: translate(-50%,-50%) scale(0);
+   transform: translate(-50%, -50%) scale(0);
 }
- #page1 {
-    min-height: 100vh; 
-    position: relative;
-    width: 100%;
-    padding: 0 2vw;
-    padding-top: 36vh;    
- }
 
- #page1 h1 {
-    font-size: 15.8vw;
-    text-transform: uppercase;
-    font-family: futura;
-    line-height: 14vw;
-    letter-spacing: -8px;
- }
+#page1 {
+   min-height: 100vh;
+   position: relative;
+   width: 100%;
+   padding: 0 2vw;
+   padding-top: 36vh;
+}
 
- #pics {
-    height: 100%;
-    width: 100%;
-    margin-top: 1vw;
-    position: relative;
- }
+#page1 h1 {
+   font-size: 15.8vw;
+   text-transform: uppercase;
+   font-family: futura;
+   line-height: 14vw;
+   letter-spacing: -8px;
+}
 
- #pics img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-   
- }
-
- #pics #pic{
-    padding: 3vw 2.2vw;
-    position: relative;
-    overflow: hidden;
- }
- 
- #page2 {
-    min-height: 130vh;
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 0;
-    padding: 0 2vw;
-    
-  }
-  #page2 #box {
-     height: 45vw;
-     width: 30.5vw;
-     position: relative;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     /* background-color: red; */
- 
-  }
-   #para {
-     height: 100%;
-     font-size: 1.3vw;
-     margin-top: 0;
-     padding-right: 10vw;
-     line-height: 2vw;
-     padding-top: 1.6vw;
- 
-   }
-   #para #p1 {
-     padding-top: 1.6vw;
-   }
-   #para #p2 {
-     padding-top: 1.6vw;
-   }
-   #para #p3 {
-     padding-top: 1.6vw;
-   }
-   #para #p4 {
-     padding-top: 1.6vw;
-   }
-  
-   .title {
-      padding-top: 6vw ;
-    flex-direction: column;
-   }
-  #box h1 {
-     height: 100%;
-     margin-bottom: 0;
-     font-size: 1.8vw;
-     text-transform: uppercase;
-     font-family: futura;
-     line-height: 1.5vw;
-     padding-right: 12vw;
-     /* letter-spacing: -8px; */
-  }
-  #box img {
+#pics {
    height: 100%;
-    object-fit: cover;
+   width: 100%;
+   margin-top: 1vw;
+   position: relative;
 }
 
-  #page2 #para #links2 a {
+#pics img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+
+}
+
+#pics #pic {
+   padding: 3vw 2.2vw;
+   position: relative;
+   overflow: hidden;
+}
+
+#page2 {
+   min-height: 130vh;
+   width: 100%;
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+   margin-top: 0;
+   padding: 0 2vw;
+
+}
+
+#page2 #box {
+   height: 45vw;
+   width: 30.5vw;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* background-color: red; */
+
+}
+
+#para {
+   height: 100%;
+   font-size: 1.3vw;
+   margin-top: 0;
+   padding-right: 10vw;
+   line-height: 2vw;
+   padding-top: 1.6vw;
+
+}
+
+#para #p1 {
+   padding-top: 1.6vw;
+}
+
+#para #p2 {
+   padding-top: 1.6vw;
+}
+
+#para #p3 {
+   padding-top: 1.6vw;
+}
+
+#para #p4 {
+   padding-top: 1.6vw;
+}
+
+.title {
+   padding-top: 6vw;
+   flex-direction: column;
+}
+
+#box h1 {
+   height: 100%;
+   margin-bottom: 0;
+   font-size: 1.8vw;
+   text-transform: uppercase;
+   font-family: futura;
+   line-height: 1.5vw;
+   padding-right: 12vw;
+   /* letter-spacing: -8px; */
+}
+
+#box img {
+   height: 100%;
+   object-fit: cover;
+}
+
+#page2 #para #links2 a {
    text-transform: uppercase;
    text-decoration: none;
    color: #333;
@@ -191,36 +213,38 @@ body {
    position: relative;
    padding-bottom: 8px;
    letter-spacing: 0.05em;
-  }
-   #para #links2 {
-   padding-right: 16px;
-   padding-top:3vw;
-  }
+}
 
-  .bar {
+#para #links2 {
+   padding-right: 16px;
+   padding-top: 3vw;
+}
+
+.bar {
    margin-top: 5px;
-    /* height: 5px; */
-    /* position: absolute; */
+   /* height: 5px; */
+   /* position: absolute; */
    background-color: #000;
    top: 100%;
    left: 0px;
    width: 100%;
    height: 1px;
    background: currentColor
-  }
-  /* *::before, *::after {
+}
+
+/* *::before, *::after {
    box-sizing: border-box;
    -webkit-tap-highlight-color: transparent;
 }
 */
-   .bar:hover { 
-     
-   transform-origin: 0% 0%; 
-   transition:  linear  ease-in;
+.bar:hover {
+
+   transform-origin: 0% 0%;
+   transition: linear ease-in;
    transform: translate(100px);
 
-  }
-  
+}
+
 #nav-page3 {
    width: 100%;
    position: relative;
@@ -231,6 +255,7 @@ body {
    /* align-items: flex-start; */
    /* justify-content: space-between; */
 }
+
 #nav-page3 h2 {
    text-transform: uppercase;
    text-decoration: none;
@@ -241,6 +266,7 @@ body {
    position: relative;
    letter-spacing: 0.05em;
 }
+
 #bar1 {
    width: 100%;
    display: flex;
@@ -248,96 +274,103 @@ body {
    justify-content: space-between;
 
 }
+
 .bar2 {
    height: 0.5px;
-  background-color: #000;
-  } 
- 
- #page3 {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 0 2vw;
-    padding-bottom: 0;
-    /* overflow-y: hidden; */
- }
+   background-color: #000;
+}
 
- #page3 .elem {
-    height: 100%;
-    width: 31%;
+#page3 {
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 2vw;
+   padding-bottom: 0;
+   /* overflow-y: hidden; */
+}
+
+#page3 .elem {
+   height: 100%;
+   width: 31%;
    overflow: hidden;
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
- }
+}
 
- #page3 .elem img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    scale: 1.1;
- }
+#page3 .elem img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   scale: 1.1;
+}
 
- .elem .dets {
+.elem .dets {
    height: 50px;
    border-radius: 40px;
    width: 80%;
    position: absolute;
    z-index: 9;
-   transition: all  0.5s;
-   
- }
- #dets1 {
+   transition: all 0.5s;
+
+}
+
+#dets1 {
    background-color: rgb(229, 240, 214);
- }
- #dets2 {
-   background-color:rgb(245, 223, 207);
- }
+}
 
- #dets3 {
-   background-color:rgb(255, 255, 255);
- }
+#dets2 {
+   background-color: rgb(245, 223, 207);
+}
 
- .elem .dets:hover{
+#dets3 {
+   background-color: rgb(255, 255, 255);
+}
+
+.elem .dets:hover {
    margin-top: 220px;
    border-radius: 40px;
    height: 270px;
    cursor: pointer;
-   --a:1;
-   transition: var(--a) ;
- } 
- #dets-nav {
+   --a: 1;
+   transition: var(--a);
+}
+
+#dets-nav {
    display: flex;
    align-items: center;
    justify-content: center;
    justify-content: space-between;
    padding: 16px;
    position: relative;
- }
- #dets-nav a {
+}
+
+#dets-nav a {
    text-decoration: none;
    text-transform: uppercase;
    color: #333;
    font-size: 1.1vw;
    letter-spacing: 0.06em;
-   
- }
- #dot {
+
+}
+
+#dot {
    height: 8px;
    width: 8px;
    border-radius: 50%;
    background-color: #000;
    margin: 0 10px;
- }
- #bold {
-   font-weight: 700;
- }
+}
 
- .dets-image {
+#bold {
+   font-weight: 700;
+}
+
+.dets-image {
    height: 135px;
    margin-top: 15px;
    display: flex;
@@ -349,35 +382,36 @@ body {
    left: 0;
    opacity: var(--a);
    transition: all;
-   
+
    /* z-index: 1; */
 
- }
- .dets-image img {
+}
+
+.dets-image img {
    /* margin: 0 30px; */
    /* padding: 1vw; */
    object-fit: cover;
    scale: 1.1;
- }
+}
 
- .page3-child {
+.page3-child {
    margin-top: 0;
    min-height: 70vh;
    width: 100%;
    position: relative;
    display: flex;
-   align-items:center;
+   align-items: center;
    justify-content: space-between;
    padding: 1vw 2vw;
- }
+}
 
- #child {
+#child {
    height: 100%;
-  overflow: hidden;
-  padding-bottom: 8vw;
+   overflow: hidden;
+   padding-bottom: 8vw;
 
 
- }
+}
 
 #child h1 {
    height: 100%;
@@ -388,9 +422,10 @@ body {
    padding-bottom: 4vw;
 
 }
- .child3  {
+
+.child3 {
    padding-bottom: 2vw;
-} 
+}
 
 #child p {
    height: 100%;
@@ -401,7 +436,7 @@ body {
    padding-left: 11vw;
 }
 
- #page4 {
+#page4 {
    min-height: 120vh;
    width: 100%;
    position: relative;
@@ -409,262 +444,284 @@ body {
    align-items: center;
    justify-content: space-evenly;
    flex-wrap: wrap;
- }
- .child {
+}
+
+.child {
    height: 55vh;
    width: 38vw;
    position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
- }
-
- .child  img {
-  height: 100%;
-
- }
-  
- /* Responsive Website code  */
-  
- @media (max-width:600px) {
-   
-#nav {
-   /* background-color: blanchedalmond; */
-   width: 100%;
-   position: fixed;
-   z-index: 99;
-   padding: 15px;
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
-}
-#nav #nav-part2 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 40px;
-
-}
-#links {
-   padding: 10px;
-   display: none;
-}
-#nav-part1 {
-   /* background-color: red; */
-   height: 67px;
-   overflow: hidden;
-}
-#nav-part1 svg {
-   display: block;
-   height: 63px;
-   width: 80px;
-}
-#nav #twogoodlogo {
-   height: 40px;
-   margin-left: -20px;
 }
 
-#icons {
-   padding: 7px;
-   border-radius: 50px;
-   background-color: #f7f7f7;
-}
-#nav-part2 #icons i {
-   font-size: 15px;
-   margin: 0 20px;
-   font-weight: 100;
+.child img {
+   height: 100%;
 
 }
 
-    
- #page1 {
-    min-height: 70vh; 
-    width: 100%;
-    padding: 0 3vw;
-    padding-top: 25vh;
-     
- }
-    
- #page1 h1 {
-    font-size: 15.5vw;
-    letter-spacing: -3px;
- }
+/* Responsive Website code  */
 
- #pics {
-    height: 25vh;
-    margin-top: 3vw;  
- }
+@media (max-width:600px) {
 
- #pics #pic {
-    padding: 9.5vw 7.2vw;
-    font-size: 4.5vw;
-    position: relative;
- }
- #page2 {
-    min-height: 140vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    
-    
-  }
-  #page2 #box {
-     min-height: 60vh;
-     width: 100%;
-     position: relative;
-  } 
-  .title {
-    height: 55vh;
-    width: 88vw;
-    padding-top: 5vw;
-  }
-   
-  #para { 
-    height: 55vh;
-    width: 88vw;
-    font-size: 3.2vw;
-    padding-right: 10vw;
-    line-height: 4vw;
-    padding-top: 1.6vw;
-    display: flex;
-    flex-direction: column
+   #nav {
+      /* background-color: blanchedalmond; */
+      width: 100%;
+      position: fixed;
+      z-index: 99;
+      padding: 15px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
 
-  }
-  #box h1 {
-     height: 100%;
-     margin-bottom: 0;
-     font-size: 4vw;
-     text-transform: uppercase;
-     font-family: futura;
-     line-height: 3.5vw;
-     padding-right: 35vw;
-     padding-top: 40;
-  }
-  
-  #page2 #box img {
-     height: 75%;
+   #nav #nav-part2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
 
-    
- }
- #page2  #h2{
-   padding: 0 2.1vw;
-   font-size: 7vw;
-   line-height: 8vw;
-   letter-spacing : 0.1vw;
- }
- #para  {
-   min-height: 160vh;
-   font-size: 5vw;
-   line-height: 6vw;
- }
- #page2 #box {
-    min-height: 120vh;
-    width: 100%;
-    position: relative;
- }
- #page3 {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 5vw 3vw;
-    flex-direction: column;
- }
+   }
 
- #page3 .elem {
-    height: 100vh;
-    width: 100%;
-   overflow: hidden;
-   margin-bottom: 3vw;
- }
+   #links {
+      padding: 10px;
+      display: none;
+   }
 
- #page3 .elem img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    scale: 1.2;
- }
- 
-  #page3 .elem .dets {
-   height: 40px;
-   border-radius: 50px;
-   width: 70%;
-   position: absolute;
-   z-index: 9;
-   background-color: palegoldenrod;
+   #nav-part1 {
+      /* background-color: red; */
+      height: 67px;
+      overflow: hidden;
+   }
 
- }
+   #nav-part1 svg {
+      display: block;
+      height: 63px;
+      width: 80px;
+   }
 
- #dets-nav a  {
-   font-size: 3.5vw;
-   align-items: center;
-   justify-content: center;
-   /* width: 70%; */
-  /* overflow: hidden; */
+   #nav #twogoodlogo {
+      height: 40px;
+      margin-left: -20px;
+   }
 
- }
- #dets-nav {
-   display: flex;
-   justify-content: space-between;
-   position: relative;
-   padding-top: 2vw;
- }
-#page3 #elem2 #dets1 {
-   background-color: rgb(229, 240, 214);
- }
- #page3 #elem1 #dets2 {
-   background-color:rgb(245, 223, 207);
- }
+   #icons {
+      padding: 7px;
+      border-radius: 50px;
+      background-color: #f7f7f7;
+   }
 
- #page3 #elem3 #dets3 {
-   background-color:rgb(255, 255, 255);
- }
+   #nav-part2 #icons i {
+      font-size: 15px;
+      margin: 0 20px;
+      font-weight: 100;
 
- .page3-child  {
-   flex-direction: column;
-   justify-content: center;
- } 
-  .page3-child #child2 {
-   height: 38vh;
-   font-size: 5.5vw;
-   line-height: 6.5vw;
- }
- .page3-child #c2 {
-   font-size: 7vw;
-   padding: 0 22vw;
-   line-height: 8.2vw;
-   letter-spacing: 1vw;
- }
- .page3-child #c3 {
-   font-size: 5.5vw;
-   line-height: 6.5vw;
- }
- #page4 {
-   min-height: 120vh;
-   width: 100%;
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
- }
- .child {
-   height: 55vh;
-   width: 88vw;
-   position: relative;
-   padding: 15px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+   }
 
- .child  img {
-  height: 100%;
 
- }
- }
+   #page1 {
+      min-height: 70vh;
+      width: 100%;
+      padding: 0 3vw;
+      padding-top: 25vh;
+
+   }
+
+   #page1 h1 {
+      font-size: 15.5vw;
+      letter-spacing: -3px;
+   }
+
+   #pics {
+      height: 25vh;
+      margin-top: 3vw;
+   }
+
+   #pics #pic {
+      padding: 9.5vw 7.2vw;
+      font-size: 4.5vw;
+      position: relative;
+   }
+
+   #page2 {
+      min-height: 140vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+
+
+   }
+
+   #page2 #box {
+      min-height: 60vh;
+      width: 100%;
+      position: relative;
+   }
+
+   .title {
+      height: 55vh;
+      width: 88vw;
+      padding-top: 5vw;
+   }
+
+   #para {
+      height: 55vh;
+      width: 88vw;
+      font-size: 3.2vw;
+      padding-right: 10vw;
+      line-height: 4vw;
+      padding-top: 1.6vw;
+      display: flex;
+      flex-direction: column
+   }
+
+   #box h1 {
+      height: 100%;
+      margin-bottom: 0;
+      font-size: 4vw;
+      text-transform: uppercase;
+      font-family: futura;
+      line-height: 3.5vw;
+      padding-right: 35vw;
+      padding-top: 40;
+   }
+
+   #page2 #box img {
+      height: 75%;
+
+
+   }
+
+   #page2 #h2 {
+      padding: 0 2.1vw;
+      font-size: 7vw;
+      line-height: 8vw;
+      letter-spacing: 0.1vw;
+   }
+
+   #para {
+      min-height: 160vh;
+      font-size: 5vw;
+      line-height: 6vw;
+   }
+
+   #page2 #box {
+      min-height: 120vh;
+      width: 100%;
+      position: relative;
+   }
+
+   #page3 {
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5vw 3vw;
+      flex-direction: column;
+   }
+
+   #page3 .elem {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 3vw;
+   }
+
+   #page3 .elem img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      scale: 1.2;
+   }
+
+   #page3 .elem .dets {
+      height: 40px;
+      border-radius: 50px;
+      width: 70%;
+      position: absolute;
+      z-index: 9;
+      background-color: palegoldenrod;
+
+   }
+
+   #dets-nav a {
+      font-size: 3.5vw;
+      align-items: center;
+      justify-content: center;
+      /* width: 70%; */
+      /* overflow: hidden; */
+
+   }
+
+   #dets-nav {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding-top: 2vw;
+   }
+
+   #page3 #elem2 #dets1 {
+      background-color: rgb(229, 240, 214);
+   }
+
+   #page3 #elem1 #dets2 {
+      background-color: rgb(245, 223, 207);
+   }
+
+   #page3 #elem3 #dets3 {
+      background-color: rgb(255, 255, 255);
+   }
+
+   .page3-child {
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .page3-child #child2 {
+      height: 38vh;
+      font-size: 5.5vw;
+      line-height: 6.5vw;
+   }
+
+   .page3-child #c2 {
+      font-size: 7vw;
+      padding: 0 22vw;
+      line-height: 8.2vw;
+      letter-spacing: 1vw;
+   }
+
+   .page3-child #c3 {
+      font-size: 5.5vw;
+      line-height: 6.5vw;
+   }
+
+   #page4 {
+      min-height: 120vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+   }
+
+   .child {
+      height: 55vh;
+      width: 88vw;
+      position: relative;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .child img {
+      height: 100%;
+
+   }
+}
